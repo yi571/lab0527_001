@@ -134,7 +134,9 @@
     <Content Include="webfonts\fa-solid-900.woff2" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="A.txt" />
     <Content Include="addSuccess.aspx" />
+    <Content Include="B.txt" />
     <Content Include="css\fa-brands.css" />
     <Content Include="css\fa-brands.min.css" />
     <Content Include="css\fa-regular.css" />
