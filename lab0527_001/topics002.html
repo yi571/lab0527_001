@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>~~專題網頁~~</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    
+
+
+
+
+</head>
+
+<body>
+    <div>
+        <div class="nav justify-content-center">
+            <ul class="nav nav-tabs">
+                <form>
+                    <div class="form-group">
+                        <br>
+                        <label for="sel1">選擇層數</label>
+                        <select class="form-control" id="sel1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+
+                </form>
+
+                </div>
+        </div>
+        
+        <!--//塔三區-->
+        <div id=aTower>
+            <h1>第一座塔</h1>
+            <p id="aTowerP">...</P>
+            <button id="aToB"  class="btn btn-primary">移動到第二座塔</button>
+            <br><br>
+            <button id="aToC"  class="btn btn-primary">移動到第三座塔</button>
+        </div>
+        
+        <div id=bTower>
+            <h1>第二座塔</h1>
+            <p id="bTowerP">...</P>
+            <button id="bToA"  class="btn btn-primary">移動到第一座塔</button>
+            <br><br>
+            <button id="bToC"  class="btn btn-primary">移動到第三座塔</button>
+        </div>
+        
+        <div id=cTower>
+            <h1>第三座塔</h1>
+            <p id="cTowerP">...</P>
+            <button id="cToA"  class="btn btn-primary">移動到第一座塔</button>
+            <br><br>
+            <button id="cToB"  class="btn btn-primary">移動到第二座塔</button>
+        </div>
+        <!--//塔三區-->
+        <br>
+        <button id="btDebug"  class="btn btn-primary">完成</button>
+        
+        <div id = "debug" >
+            ...
+        </div>
+    </div>
+
+    
+    <!--河內塔script-->
+    <script src="/task/topics001/js/h3.js"></script>    
+    
+
+
+    
+
+</body>
+
+</html>

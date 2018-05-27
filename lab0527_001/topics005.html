@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>~~專題網頁~~</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!--Icon圖示-->
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+
+
+
+
+
+</head>
+
+<body>
+    <div class="container" style="font-size: 20px">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-nav" href="#">遊戲區</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="#">首頁 <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="topics003.html">河內塔</a>
+                        <a class="nav-item nav-link" href="topics005.html">猜數字</a>
+                        <!--<a class="nav-item nav-link disabled" href="#">Disabled</a>-->
+                    </div>
+                </div>
+                <div>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="搜尋..." aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        
+
+
+        <!--//以下一區-->
+        <div class="jumbotron container-fluid" >
+            
+            <div class="form-group">
+            <label for="inputPassword" id="labPassword" >輸入數字</label>
+            <input type="tel" class="form-control" id="inputPassword" name="inputNum" aria-describedby="emailHelp" placeholder="...">
+            <small id="emailHelp" class="form-text text-muted">請輸入四位 1~9 不重複之數字</small>
+            
+            <buttom id="checkNum" class="btn btn-primary" style="font-size: 20px">猜數字</buttom>
+            <buttom id="startGame" class="btn btn-primary" style="font-size: 20px">開始新遊戲</buttom>
+            <buttom id="lookAns" class="btn btn-primary" style="font-size: 20px">看答案</buttom><br>
+            <p id = "ansWord" class = "d-none">...<br></p>
+            </div>
+            
+
+                
+        </div>
+        <!--//以上一區-->
+
+        <!--//以上二區-->
+        <div class="jumbotron container-fluid text-center">
+            <h1>提示</h1>
+           <p id="tipArea">...<br></p> 
+        </div>
+        <!--//以下二區-->
+
+        <!--//答案彈出視窗-->
+        <div class="modal fade" id="ansModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div>
+                    
+                    
+                </div>
+                <div class="modal-body text-center">
+                    
+                    <p id="allTimeId">...</p>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+                
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!--//開始遊戲彈出視窗-->
+        <div class="modal fade" id="startModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div>
+                    
+                    
+                </div>
+                <div class="modal-body text-center">
+                    
+                    <h1 class="modal-title" id="exampleModalLongTitle">遊戲開始~~~!<br></h1>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+                
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+            <!--完成彈出視窗-->
+        <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div>
+                        
+                        
+                    </div>
+                    <div class="modal-body text-center">
+                        <h1 class="modal-title" id="exampleModalLongTitle">你猜對了~~~!<br></h1>
+                        
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                    
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+    </div>
+    
+    
+            
+
+
+    <!--猜數字script-->
+    <script src="js/h5.js"></script>
+
+    
+
+
+
+
+
+</body>
+
+</html>
